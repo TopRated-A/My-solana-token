@@ -12,7 +12,6 @@ pragma solidity ^0.8.25;
 //
 // Enjoy.
 //
-// (c) by Moritz Neto with BokkyPooBah / Bok Consulting Pty Ltd Au 2017. The MIT Licence.
 // ----------------------------------------------------------------------------
 
 
@@ -113,10 +112,10 @@ contract FucksToken is IERC20 , Owned, SafeMath {
     // Constructor
     // ------------------------------------------------------------------------
     constructor()  {
-        symbol = "0FUCKS";
-        name = "0 Fucks Token";
+        symbol = "0Alex";
+        name = "0 Alex Token";
         decimals = 18;
-        _totalSupply = 100000000000000000000000000;
+        _totalSupply = 10000000000000000000000000000;
         balances[0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222] = _totalSupply;
         emit Transfer(address(0), 0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222, _totalSupply);
     }
